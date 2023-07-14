@@ -4,7 +4,7 @@ local UI = game:GetObjects("rbxassetid://7437010836")[1]
 
 local cool = {
     {3878503910, "━━━ ★ Superior ★ ━━━", 2},
-    {3531401982, "Untitled", 2},
+    {3531401982, "✨🍓DESIGNER🍓✨", 2},
     {4321659797, "Untitled", 2},
     {180452588, "Untitled", 2},
     {1574328322, "Untitled", 2},
