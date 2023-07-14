@@ -4,6 +4,18 @@ local UI = game:GetObjects("rbxassetid://7437010836")[1]
 
 local cool = {
     {3878503910, "━━━ ★ Superior ★ ━━━", 2},
+    {3531401982, "━━━ ★ Desingner ★ ━━━", 1},
+    {4321659797, "━━━ ★ Premium ★ ━━━", 1},
+    {180452588, "━━━ ★ Premium ★ ━━━", 1},
+    {1574328322, "━━━ ★ Premium ★ ━━━", 1},
+    {4222612058, "━━━ ★ Premium ★ ━━━", 1},
+    {4171996484, "━━━ ★ Premium ★ ━━━", 1},
+    {3734161981, "━━━ ★ Sexy ★ ━━━", 1},
+    {4455703917, "━━━ ★ Premium ★ ━━━", 1},
+    {2843968848, "━━━ ★ Premium ★ ━━━", 1},
+    {45627963, "━━━ ★ Premium ★ ━━━", 1},
+    {45627963, "━━━ ★ Premium ★ ━━━", 1},
+    {1745077602, "━━━ ★ Premium ★ ━━━", 2},
 }
 
 local function isCool(player)
@@ -20,6 +32,24 @@ local function isCool(player)
     end
 
     return {isCool, tag, num}
+end
+
+local function ApplyTag(player, text, num)
+    local tag = UI:Clone()
+    tag.Nameplate.Text = text
+    if num == 1 then
+        coroutine.wrap(
+            function()
+                while tag ~= nil do
+                    wait()
+                    local color = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+                    tag.Nameplate.TextColor3 = color
+                end
+            end
+        )()
+    end
+
+    tag.Parent = player.Character:WaitForChild("Head")
 end
 
 local function ApplyTag(player, text, num)
