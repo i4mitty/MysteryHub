@@ -15,7 +15,7 @@ local cool = {
     {2843968848, "Untitled", 2},
     {45627963, "Untitled", 2},
     {45627963, "Untitled", 2},
-    {1745077602, "Untitled", 2},
+    {1745077602, "BRYAN 🔥☄️", 2},
 }
 
 local function isCool(player)
